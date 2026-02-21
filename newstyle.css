@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: "Urbanist", sans-serif;
+    
+}
+.display-card{
+    border-radius: 20px;
+    width: 300px;
+    height: 200px;
+    color: grey;
+    background: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.display-card p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.cancel{
+    padding: 2px 5px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    color: grey;
+    cursor: pointer;
+}
+.btn-toggler{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+
+}
+
+
+/* counter */
+
+
+.display-value{
+    font-size: 60px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.counter button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    font-size: 30px;
+}
+
+/* form */
+.cpismform{
+    width: 400px;
+    padding:  20px 10px;
+    margin: 50px 0px; 
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-group label{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-group input, .select-field{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+.error{
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}
+.cpismform button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+.form-submit{
+    margin-top: 10px;
+}
+
+<section class="countdown-section">
+
+        <div> The time to count down is 2hrs</div>
+        <form class="timeForm">
+            <input class="userTime" type="time" placeholder="enter the duration">
+
+            <button class="userTimeSubmit">Submit</button>
+        </form>
+        <div class="times">
+
+             <p><span class="hr-count">00</span> hr :</p>
+    
+        <p><span class="min-count">00</span> min :</p>
+    
+       <p><span class="sec-count">00</span> sec</p>
+
+        </div>
+
+        <div class="countdown-btn-wrapper">
+            <button class="countdown-btn">Start Countdown</button>
+            <button class="reset-countdown-btn">Reset Countdown</button>
+            
+        </div>
+
+       
+
+    </section>
+/* countdown section */
+
+
+.countdown-section{
+    padding: 20px 60px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    flex-direction: column;
+    
+}
+.times{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.countdown-section button{
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: black;
+    font-size: 30px;
+}
+.countdown-section div{
+    font-size: 40px;
+}
