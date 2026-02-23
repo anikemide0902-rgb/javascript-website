@@ -103,3 +103,21 @@ button{
     background-color: #007BFF;
     color: white;
 }
+.menu{
+    display: none;
+}
+
+
+@media screen and (max-width:640px) {
+
+    nav a{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        width: 50px;
+    }
+    h1{
+        margin: 30px;
+    }
+}

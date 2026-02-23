@@ -17,7 +17,6 @@ body{
 }
 .display-card{
     border-radius: 20px;
-    width: 300px;
     height: 200px;
     color: grey;
     background: white;
@@ -26,6 +25,7 @@ body{
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 .display-card p{
     font-size: 20px;
@@ -161,4 +161,15 @@ body{
 }
 .countdown-section div{
     font-size: 40px;
+}
+
+
+
+@media screen and (max-width:640px) {
+    body{
+        padding: 30px;
+    }
+    .cpismform{
+        width: 100%;
+    }
 }

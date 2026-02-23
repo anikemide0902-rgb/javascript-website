@@ -31,6 +31,8 @@ body{
 .color-game h2{
     font-size: 40px;
     color: pink;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .cards-container{
     display: flex;
@@ -69,4 +71,17 @@ body{
     align-items: center;
     width: 1000px;
     font-size: 30px;
+}
+
+@media screen and (max-width:640px) {
+    body{
+        padding: 30px;
+    }
+    .flex-head{
+        width: 100%;
+    }
+    .card{
+        width: 150px;
+        height: 100px;
+    }
 }
